@@ -4,59 +4,59 @@
   <img alt="REPLAY" src="assets/brand/replay-logo-light.png" width="240">
 </picture>
 
-# 크레이지아케이드 BnB M (Crazy Arcade BnB M)
+# 泡泡堂 M（Crazy Arcade BnB M）
 
-모바일 물풍선 액션 게임
+一款手机平台上的水球动作游戏。
 
-> **경고: Lab Track 참가 승인을 받은 창작자만 이용할 수 있습니다.** 승인받지 않은 사내 제작, 학습, 연구, 개인 공부, 상업 등 목적과 관계없이 모든 이용을 제한합니다.
+> **警告：仅限获准参加 Lab Track 的创作者使用。** 未经批准的使用一律禁止，不因其属于内部制作、学习、研究、个人学习或商业用途而例外。
 
-> 이용 조건은 저장소 루트의 [LICENSE](LICENSE) 와 [NOTICE](NOTICE) 를 따릅니다. 뷰어: [이 게임을 뷰어로 보기](https://nexon-replay.github.io/Boomhill/#/g/bnb-mobile). 세계관과 다른 게임은 [허브](https://nexon-replay.github.io/Boomhill/)에 있습니다.
+> 使用条件以仓库根目录中的 [LICENSE](LICENSE) 和 [NOTICE](NOTICE) 为准。查看器：[在查看器中浏览本游戏](https://nexon-replay.github.io/Boomhill/#/g/bnb-mobile)。其他游戏请访问[资源中心](https://nexon-replay.github.io/Boomhill/)。
 
-## 폴더
+## 目录
 
-| 폴더 | 내용 |
+| 目录 | 内容 |
 |---|---|
-| `2d/` | 2D 그림: 묶음마다 폴더 하나, 그림은 PNG(여러 프레임이면 스프라이트 시트)와 아틀라스 JSON |
-| `3d/` | 3D 미리보기 모델: 분류마다 폴더 하나. `<id>.glb` 모델, `<id>.webp` 썸네일, `<id>.json` 부가 정보 |
-| `3d/_shared/` | 여러 모델이 나눠 쓰는 텍스처, 표정 그림, 조립 파츠(이름은 원래 이름_짧은 해시) |
-| `2d/manifest.json`, `3d/manifest.json` | 파일마다 크기와 SHA-256 |
+| `2d/` | 2D 图像，按资源包分别存放；图像为 PNG，多帧图像使用精灵图集，并附有图集 JSON |
+| `3d/` | 3D 预览模型，按类别分别存放；每个模型包含 `<id>.glb` 模型、`<id>.webp` 缩略图和 `<id>.json` 附加信息 |
+| `3d/_shared/` | 多个模型共用的纹理、表情图和组装部件（文件名为原始名称_短哈希） |
+| `2d/manifest.json`、`3d/manifest.json` | 记录每个文件的大小和 SHA-256 |
 
-## 2D 그림
+## 2D 图像
 
-| 묶음 | 제목 | 그림 | 프레임 |
+| 资源包 | 内容 | 图像数 | 帧数 |
 |---|---|---:|---:|
 | `010_ui` | UI | 2,198 | 2,198 |
-| `020_icon` | 아이콘 | 1,643 | 1,643 |
-| `030_map` | 맵 | 835 | 835 |
-| `040_monster` | 몬스터 모드 | 419 | 419 |
-| `050_effect` | 효과 | 477 | 477 |
-| | 합계 | 5,572 | 5,572 |
+| `020_icon` | 图标 | 1,643 | 1,643 |
+| `030_map` | 地图 | 835 | 835 |
+| `040_monster` | 怪物模式 | 419 | 419 |
+| `050_effect` | 特效 | 477 | 477 |
+| | 合计 | 5,572 | 5,572 |
 
-## 3D 미리보기 모델
+## 3D 预览模型
 
-브라우저에서 바로 보는 미리보기입니다(압축 GLB, 텍스처 긴 변 512px, 캐릭터는 기본 동작만). 게임 제작, 편집에는 아래 원본 zip 을 쓰세요.
+这些模型可直接在浏览器中预览（压缩后的 GLB、纹理最长边为 512 px，角色仅包含基础动作）。如需用于游戏制作或编辑，请使用下方的原始 ZIP 文件。
 
-| 폴더 | 분류 | 모델 |
+| 目录 | 类别 | 模型数 |
 |---|---|---:|
-| `3d/010_character/` | 캐릭터 | 11 |
-| `3d/020_costume/` | 코스튬 | 221 |
-| `3d/030_vehicle/` | 탈것 | 10 |
-| `3d/040_pet/` | 펫 | 10 |
-| `3d/050_monster/` | 몬스터 | 40 |
-| `3d/060_accessory/` | 액세서리 | 528 |
-| | 합계 | 820 |
+| `3d/010_character/` | 角色 | 11 |
+| `3d/020_costume/` | 服装 | 221 |
+| `3d/030_vehicle/` | 载具 | 10 |
+| `3d/040_pet/` | 宠物 | 10 |
+| `3d/050_monster/` | 怪物 | 40 |
+| `3d/060_accessory/` | 配饰 | 528 |
+| | 合计 | 820 |
 
-## 3D 원본 zip
+## 3D 原始 ZIP
 
-압축하지 않은 GLB, 원래 해상도 PNG 텍스처, 전체 동작을 분류마다 묶었습니다. 저장소의 Releases 에서 받습니다.
+原始文件按类别打包，包含未压缩的 GLB、原始分辨率的 PNG 纹理和完整动作。请从仓库的 Releases 下载。
 
-| 분류 | 파일 | 크기 | 모델 |
+| 类别 | 文件 | 大小 | 模型数 |
 |---|---|---:|---:|
-| 액세서리 | [bnb-mobile-3d-accessory.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-accessory.zip) | 7.7MB | 528 |
-| 캐릭터 | [bnb-mobile-3d-character.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-character.zip) | 10.7MB | 11 |
-| 코스튬 | [bnb-mobile-3d-costume.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-costume.zip) | 49.5MB | 221 |
-| 몬스터 | [bnb-mobile-3d-monster.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-monster.zip) | 3.5MB | 40 |
-| 펫 | [bnb-mobile-3d-pet.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-pet.zip) | 0.7MB | 10 |
-| 탈것 | [bnb-mobile-3d-vehicle.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-vehicle.zip) | 1.1MB | 10 |
+| 配饰 | [bnb-mobile-3d-accessory.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-accessory.zip) | 7.7 MB | 528 |
+| 角色 | [bnb-mobile-3d-character.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-character.zip) | 10.7 MB | 11 |
+| 服装 | [bnb-mobile-3d-costume.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-costume.zip) | 49.5 MB | 221 |
+| 怪物 | [bnb-mobile-3d-monster.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-monster.zip) | 3.5 MB | 40 |
+| 宠物 | [bnb-mobile-3d-pet.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-pet.zip) | 0.7 MB | 10 |
+| 载具 | [bnb-mobile-3d-vehicle.zip](https://github.com/NEXON-REPLAY/Boomhill-BnBM/releases/download/3d-originals-v1/bnb-mobile-3d-vehicle.zip) | 1.1 MB | 10 |
 
-형식은 [허브 저장소의 docs/format.md](https://github.com/NEXON-REPLAY/Boomhill/blob/main/docs/format.md), 쓰는 법은 [자료 안내](https://nexon-replay.github.io/Boomhill/guide.html)에 있습니다.
+文件格式见[资源中心仓库的 docs/format.md](https://github.com/NEXON-REPLAY/Boomhill/blob/main/docs/format.md)，使用方法见[资料指南](https://nexon-replay.github.io/Boomhill/guide.html)。
